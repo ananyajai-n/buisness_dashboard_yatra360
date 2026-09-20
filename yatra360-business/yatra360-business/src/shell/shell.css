@@ -1,0 +1,27 @@
+/* Landing gate + global reset. The Business module ships its own styles. */
+*,*::before,*::after{box-sizing:border-box}
+html,body,#root{margin:0;min-height:100%;background:var(--ink);color:var(--paper)}
+body{font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:-.01em}
+
+.y-gate{min-height:100dvh;display:flex;flex-direction:column}
+.y-gate-head{padding:34px clamp(20px,5vw,64px) 22px;border-bottom:1px solid var(--basalt)}
+.y-gate-head .y-wordmark{display:flex;align-items:baseline;gap:12px}
+.y-gate-head .y-wordmark b{font-size:24px}
+.y-gate-head .y-wordmark span{font-size:11px;letter-spacing:.14em;color:var(--gold)}
+.y-gate-lede{max-width:52ch;margin-top:26px}
+.y-gate-lede h1{font-size:clamp(28px,4.6vw,46px);line-height:1.12}
+.y-gate-lede p{margin:14px 0 0;color:var(--muted);max-width:46ch}
+.y-gate-grid{flex:1;display:grid;grid-template-columns:1fr 1fr}
+.y-gate-card{padding:clamp(26px,4vw,52px);display:flex;flex-direction:column;justify-content:space-between;gap:34px;min-height:340px;border-right:1px solid var(--basalt);text-decoration:none;color:inherit;transition:background .2s}
+.y-gate-card:last-child{border-right:0}
+.y-gate-card:hover{background:var(--ink-raise)}
+.y-gate-card h2{font-size:26px;margin:8px 0 0}
+.y-gate-card p{color:var(--muted);margin:10px 0 0;max-width:34ch;font-size:14px}
+.y-gate-tag{font-family:var(--serif);font-size:13px;color:var(--faint)}
+.y-go{color:var(--gold);font-size:13px;letter-spacing:.04em;display:flex;align-items:center;gap:8px}
+.y-go i{display:block;width:26px;height:1px;background:var(--gold)}
+@media (max-width:860px){
+  .y-gate-grid{grid-template-columns:1fr}
+  .y-gate-card{border-right:0;border-bottom:1px solid var(--basalt);min-height:auto}
+}

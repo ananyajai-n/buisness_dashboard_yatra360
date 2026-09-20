@@ -1,0 +1,12 @@
+/* Yatra 360 shared design system. If the main app already ships these tokens,
+   delete this file and import theirs — the names are deliberately identical. */
+:root{
+  --ink:#14231F; --ink-raise:#1A2C27; --ink-sink:#101C19;
+  --paper:#EEF0EA; --gold:#C98A2B; --teal:#2C6E63; --brick:#B4432E; --basalt:#3A3F3C;
+  --muted:rgba(238,240,234,.58); --faint:rgba(238,240,234,.34);
+  --serif:"Source Serif 4",Georgia,serif;
+  --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --rail:212px;
+  color-scheme:dark;
+}
+/* No border-radius tokens exist on purpose. Sharp corners everywhere. */

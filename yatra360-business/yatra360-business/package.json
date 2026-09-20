@@ -1,0 +1,23 @@
+{
+  "name": "yatra360-business",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:standalone": "VITE_BUSINESS_MODE=standalone vite build",
+    "test:e2e": "pytest tests/"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "recharts": "^2.12.7",
+    "jwt-decode": "^4.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "@vitejs/plugin-react": "^4.3.1"
+  },
+  "comment": "maplibre-gl, deck.gl, @deck.gl/geo-layers and h3-js are only needed when FootTrafficHeat is swapped for the WebGL implementation."
+}
